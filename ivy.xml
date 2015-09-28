@@ -5,6 +5,7 @@
     
   <configurations>
     <conf name="default" />
+    <conf name="provided" extends="default"/>
     <conf name="runtime" visibility="public" />
     <conf name="test" visibility="private" />
     <conf name="source" />
@@ -19,7 +20,7 @@
 
     <!--  external dependencies -->
     <dependency org="commons-io" name="commons-io" rev="1.4" conf="default->default"/>
-    <dependency org="commons-vfs" name="commons-vfs" rev="20091118-pentaho" transitive="false" />
+    <dependency org="org.apache.commons" name="commons-vfs2" rev="2.1-20150824" transitive="false" />
     <dependency org="net.java.dev.jets3t" name="jets3t" rev="${dependency.jets3t.revision}" transitive="true" />
 
 	<!-- test -->
